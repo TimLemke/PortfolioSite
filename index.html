@@ -2,16 +2,351 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Project</title>
+	<meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<title>Tim Lemke</title>
+	<link rel="icon" type="image/png" href="public/assets/favicon-16x16.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:200,300,400,700" rel="stylesheet">
+	<!--Font Awesome CDN-->
+	<script src="https://use.fontawesome.com/26ff3de810.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<!--Flickity.js Styles-->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
+
 </head>
 <body>
-
-	<div class="container">
-		<h1>Hello Steve</h1>
-	</div>
-
+	<header id="header">
+		<div class="wrapper headerWrapper">
+			<nav class="headerNav">
+				<img src="public/assets/codinglogoWhite.png" alt="Tim Lemke Logo" class="tlLogo">
+				<div id="hamburger">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="headerNav__menu">
+					<div id="hamburgerOpen" class="open">
+					<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<a href="#header"><li class="headerNav__menu--link">Home</li></a>
+					<a href="#aboutMe"><li class="headerNav__menu--link">About</li></a>
+					<a href="#skills"><li class="headerNav__menu--link">Skills</li></a>
+					<a href="#myProjects"><li class="headerNav__menu--link">Projects</li></a>
+					<a href="#contactMe"><li class="headerNav__menu--link">Contact</li></a>
+					<li class="headerNav__menu--image">
+						<img src="public/assets/timLemkeHeadshot.jpg" alt="Tim Lemke Headshot">
+					</li>
+				</div>
+			</nav>
+			<div class="heroText">
+				<div class="heroText__container">
+					<h1 class="name">Tim Lemke</h1> 
+					<h1 class="title">Web Developer</h1>
+					<span></span>
+				</div>
+				<a href="#aboutMe">
+					<i class="fa fa-angle-down" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="aboutMe" id="aboutMe">
+			<div class="wrapper">
+				<div class="aboutMe__container">
+						<div class="aboutMe__container--left">
+							<img class="headshot" src="public/assets/timLemkeHeadshot.jpg" alt="Tim Lemke Headshot">
+						</div>
+						<div class="aboutMe__container--right">
+						<h2>About <span>Me</span></h2>
+							<p>My name is Tim Lemke, and I am a web developer living in Toronto. Always striving to write clean code, I am excited about and actively learning new languages and technologies. As a recent graduate of the full time web development boot camp at HackerYou, I am creative, self-managed and highly motivated.</p>
+							<p>Having spent the first part of my life as a professional guitarist, music professor and teacher, I have learned the values of creativity, self-motivation, dedicated practice and collaboration. When I am not coding, you can find me playing my guitar, hanging with friends or going for hikes with my wife.</p>
+						</div>
+						<a class="aboutMeDown" href="#skills">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+				</div>
+			</div>
+		</section>
+		<section class="skillsContainer" id="skills">
+			<div class="wrapper">
+				<div class="skills">
+					<div class="skillsContainerLeft">
+						<h2 class="currentSkillsHeader">My <span>Skills</span></h2>
+						<div class="currentSkills__container">
+							<div class="skills__container--cell"><i class="devicon-react-original"></i><p>React</p></div>
+							<div class="skills__container--cell"><i class="devicon-javascript-plain"></i><p>Javascript</p></div>
+							<div class="skills__container--cell"><i class="devicon-jquery-plain"></i><p>jQuery</p></div>
+							<div class="skills__container--cell"><i class="devicon-babel-plain"></i><p>Babel</p></div>
+							<div class="skills__container--cell"><i class="devicon-html5-plain-wordmark"></i><p>HTML5</p></div>
+							<div class="skills__container--cell"><i class="devicon-css3-plain-wordmark"></i><p>CSS3</p></div>
+							<div class="skills__container--cell"><i class="devicon-sass-original"></i><p>Sass</p></div>
+							<div class="skills__container--cell"><i class="devicon-gulp-plain"></i><p>Gulp</p></div>
+							<div class="skills__container--cell"><i class="devicon-git-plain"></i><p>Git</p></div>
+							<div class="skills__container--cell"><i class="devicon-github-plain"></i><p>GitHub</p></div>
+							<div class="skills__container--cell"><img src="public/assets/firebaseLogo.png" alt="Firebase Logo"><p>Firebase</p></div>
+							<div class="skills__container--cell"><img src="public/assets/responsive.png" alt="Responsive Design Logo"><p>Responsive Design</p></div>
+						</div>
+					</div>
+					<div class="skillsContainerRight">
+						<h2 class="futureSkillsHeader">What I Am <span>Learning</span></h2>
+						<div class="futureSkills__container">
+							<div class="skills__container--cell"><i class="devicon-nodejs-plain"></i><p>NodeJS</p></div>
+							<div class="skills__container--cell"><i class="devicon-mongodb-plain"></i><p>MongoDb</p></div>
+							<div class="skills__container--cell"><i class="devicon-express-original"></i><p>Express</p></div>
+							<div class="skills__container--cell"><i class="devicon-webpack-plain"></i><p>Webpack</p></div>
+						</div>
+					</div>
+				</div>
+				<a class="mySkillsDown" href="#myProjects">
+					<i class="fa fa-angle-down" aria-hidden="true"></i>
+				</a>
+			</div>
+		</section>
+		<section class="myProjects" id="myProjects">
+			<div class="wrapper">
+				<h2 class="myProjectsHeader">My <span>Projects</span></h2>
+				<div class="myProjects__container">
+					<div class="myProjects__text">
+						<h3>Micro<span>Cue</span></h3>
+						<div class="myProjects__images mobile wow fadeInRight">
+						<div class="main-carousel">
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-one.png" alt="MicroCue Desktop"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-two.png" alt="MicroCue Laptop"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-three.png" alt="MicroCue Tablet"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-four.png" alt="MicroCue Phone"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-five.png" alt="MicroCue All Views"></div>
+						</div>
+					</div>
+						<p>This project was built in response to a need at HackerYou for a way to organize those waiting in line to use the microwave. It was created using React, Firebase and the Giphy API. Users log in using Google Authentication, and from there are able to add themselves to the cue.</p>
+						<div class="projectIcons">
+							<p><i class="devicon-react-original"></i></p>
+							<p><i class="devicon-javascript-plain"></i></p>
+							<p><i class="devicon-babel-plain"></i></p>
+							<p><i class="devicon-gulp-plain"></i></p>
+							<img src="public/assets/firebaseLogo.png" alt="Firebase Logo">
+							<p><i class="devicon-sass-original"></i></p>
+							<img src="public/assets/responsive.png" alt="Responsive Design Logo">
+						</div>
+						<div class="myProjects__buttons">
+							<a href="https://microcue-e0afb.firebaseapp.com/" target="_blank"><button>View Live</button></a>
+							<a href="https://github.com/TimLemke/tim_lemke_microcue" target="_blank"><button>View On GitHub</button></a>
+						</div>
+					</div>
+					<div class="myProjects__images desktop wow fadeInRight">
+						<div class="main-carousel">
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-one.png" alt="MicroCue Desktop"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-two.png" alt="MicroCue Laptop"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-three.png" alt="MicroCue Tablet"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-four.png" alt="MicroCue Phone"></div>
+							<div class="carousel-cell"><img src="public/assets/deviceMockups/project6-five.png" alt="MicroCue All Views"></div>
+						</div>
+					</div>
+				</div>
+					<div class="myProjects__container containerTwo">
+						<div class="myProjects__images desktop wow fadeInLeft">
+							<div class="main-carousel">
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-one.png" alt="World of Flavour Laptop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-two.png" alt="World of Flavour Desktop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-three.png" alt="World of Flavour Tablet"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-four.png" alt="World of Flavour Phone"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-five.png" alt="World of Flavour All Views"></div>
+							</div>
+						</div>
+						<div class="myProjects__text">
+							<h3>World Of <span>Flavour</span></h3>
+							<div class="myProjects__images mobile wow fadeInLeft">
+								<div class="main-carousel">
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-one.png" alt="World of Flavour Laptop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-two.png" alt="World of Flavour Desktop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-three.png" alt="World of Flavour Tablet"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-four.png" alt="World of Flavour Phone"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project4-five.png" alt="World of Flavour All Views"></div>
+								</div>
+							</div>
+							<p>This project was created using HTML5, CSS3, Sass Javascript, jQuery and the Zomato API. It creates an interactive user experience where users can discover restaurants in the Toronto area that serve cuisines inspired by the continents of the world.</p>
+							<div class="projectIcons">
+								<p><i class="devicon-javascript-plain"></i></p>
+								<p><i class="devicon-jquery-plain"></i></p>
+								<p><i class="devicon-html5-plain-wordmark"></i></p>
+								<p><i class="devicon-css3-plain-wordmark"></i></p>
+								<p><i class="devicon-sass-original"></i></p>
+								<img src="public/assets/responsive.png" alt="Responsive Design Logo">
+							</div>
+							<div class="myProjects__buttons">
+							<a href="https://timlemke.github.io/tim_lemke_worldOfFlavour/" target="_blank"><button>View Live</button></a>
+							<a href="https://github.com/TimLemke/tim_lemke_worldOfFlavour" target="_blank"><button>View On GitHub</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="myProjects__container">
+						<div class="myProjects__text">
+							<h3>Emoji<span>Match</span></h3>
+							<div class="myProjects__images mobile wow fadeInRight">
+								<div class="main-carousel">
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-three.png" alt="Emoji Match Tablet"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-four.png" alt="Emoji Match Phone""></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-one.png" alt="Emoji Match Desktop""></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-two.png" alt="Emoji Match Laptop""></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-five.png" alt="Emoji Match All Views"></div>
+								</div>
+							</div>
+							<p>This pair programming project with <a href="http://haooowu.com" target="_blank">Hao Wu</a> utilizes Javascript and jQuery to create an engaging Emoji match game. The score is calculated and displayed dynamically to the user. </p>
+							<div class="projectIcons">
+								<p><i class="devicon-javascript-plain"></i></p>
+								<p><i class="devicon-jquery-plain"></i></p>
+								<p><i class="devicon-html5-plain-wordmark"></i></p>
+								<p><i class="devicon-css3-plain-wordmark"></i></p>
+								<p><i class="devicon-sass-original"></i></p>
+								<img src="public/assets/responsive.png" alt="Responsive Design Logo">
+							</div>
+							<div class="myProjects__buttons">
+								<a href="https://timlemke.github.io/tim_lemke_emojiMatch/" target="_blank"><button>View Live</button></a>
+								<a href="https://github.com/TimLemke/tim_lemke_emojiMatch" target="_blank"><button>View On GitHub</button></a>
+							</div>
+						</div>
+						<div class="myProjects__images desktop wow fadeInRight">
+							<div class="main-carousel">
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-three.png" alt="Emoji Match Tablet"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-four.png" alt="Emoji Match Phone""></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-one.png" alt="Emoji Match Desktop""></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-two.png" alt="Emoji Match Laptop""></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project3-five.png" alt="Emoji Match All Views"></div>
+							</div>
+						</div>
+					</div>
+					<div class="myProjects__container containerFour">
+						<div class="myProjects__images desktop wow fadeInLeft">
+							<div class="main-carousel">
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-four.png" alt="Weather We Eat Phone"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-three.png" alt="Weather We Eat Tablet"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-one.png" alt="Weather We Eat Desktop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-two.png" alt="Weather We Eat Laptop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-five.png" alt="Weather We Eat All Views"></div>
+							</div>
+						</div>
+						<div class="myProjects__text">
+							<h3>Weather We <span>Eat?</span></h3>
+							<div class="myProjects__images mobile wow fadeInLeft">
+								<div class="main-carousel">
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-four.png" alt="Weather We Eat Phone"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-three.png" alt="Weather We Eat Tablet"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-one.png" alt="Weather We Eat Desktop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-two.png" alt="Weather We Eat Laptop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project5-five.png" alt="Weather We Eat All Views"></div>
+								</div>
+							</div>
+							<p>This group project built with <a href="http://fayeyujingma.com" target="_blank">Faye Ma</a> and <a href="http://brettnielsen.ca" target="_blank">Brett Nielsen</a>  utilizes the Dark Sky, Teleport and Yummly Api’s to generate a recipe suggestion for a user, based on the temperature of their given location or city of their choice. Users can filter based on dietary restrictions, and store selected recipes in a shared recipe list, which is hosted with Firebase. This site is also entirely responsive, using floats exclusively.</p>
+							<div class="projectIcons">
+								<p><i class="devicon-javascript-plain"></i></p>
+								<p><i class="devicon-jquery-plain"></i></p>
+								<p><i class="devicon-html5-plain-wordmark"></i></p>
+								<p><i class="devicon-css3-plain-wordmark"></i></p>
+								<p><i class="devicon-sass-original"></i></p>
+								<img src="public/assets/firebaseLogo.png" alt="Firebase Logo">
+								<img src="public/assets/responsive.png" alt="Responsive Design Logo">
+							</div>
+							<div class="myProjects__buttons">
+								<a href="https://timlemke.github.io/tim_lemke_weatherWeEat/" target="_blank"><button>View Live</button></a>
+								<a href="https://github.com/TimLemke/tim_lemke_weatherWeEat" target="_blank"><button>View On GitHub</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="myProjects__container">
+						<div class="myProjects__text">
+							<h3>Sound<span>Byte</span></h3>
+							<div class="myProjects__images mobile wow fadeInRight">
+								<div class="main-carousel">
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-five.png" alt="Soundbyte All Views"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-one.png" alt="Soundbyte Desktop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-two.png" alt="Soundbyte Laptop"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-three.png" alt="Soundbyte Tablet"></div>
+									<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-four.png" alt="Soundbyte Phone"></div>
+								</div>
+							</div>
+							<p>This website is a fully responsive PSD conversion. The design of the original PSD was replicated exactly, and adapted for smaller screen sizes and mobile devices.</p>
+							<div class="projectIcons">
+								<p><i class="devicon-html5-plain-wordmark"></i></p>
+								<p><i class="devicon-css3-plain-wordmark"></i></p>
+								<p><i class="devicon-sass-original"></i></p>
+								<img src="public/assets/responsive.png" alt="Responsive Design Logo">
+							</div>
+							<div class="myProjects__buttons">
+								<a href="https://timlemke.github.io/tim_lemke_soundByte/" target="_blank"><button>View Live</button></a>
+								<a href="https://github.com/TimLemke/tim_lemke_soundByte" target="_blank"><button>View On GitHub</button></a>
+							</div>
+						</div>
+						<div class="myProjects__images desktop wow fadeInRight">
+							<div class="main-carousel">
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-five.png" alt="Soundbyte All Views"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-one.png" alt="Soundbyte Desktop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-two.png" alt="Soundbyte Laptop"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-three.png" alt="Soundbyte Tablet"></div>
+								<div class="carousel-cell"><img src="public/assets/deviceMockups/project2-four.png" alt="Soundbyte Phone"></div>
+							</div>
+						</div>
+					</div>
+					<a class="myProjectsDown" href="#contactMe">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</div>	
+		</section>
+		<section class="contactMe" id="contactMe">
+			<div class="wrapper">
+				<h3 class="contactHeader">Contact <span>Me</span></h3>
+				<div class="contactMe__container">
+					<div class="contactMe__container--left">
+						<form action="https://formspree.io/timlemkeguitarist@gmail.com" method="POST">
+							<label for="name">Name</label>
+							<input type="text" name="name" class="userInputs" required="">
+							<label for="email">Email</label>
+							<input type="email" name="email" class="userInputs" id="userEmail" required="">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" cols="30" rows="2" class="userInputs" required=""></textarea>
+							<input type="submit" value="Submit" class="submitButton">
+						</form>
+					</div>
+					<div class="contactMe__container--right">
+						<h4><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</h4>
+						<a class="email" href="mailto:tim@timlemke.ca?Subject=Hello" target="_top">tim@timlemke.ca</a>
+						<div class="socialIcon__container">
+							<h4><i class="fa fa-user" aria-hidden="true"></i> Connect</h4>
+							<a href="https://twitter.com/timlemkecodes" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://medium.com/@timlemkecodes" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+							<a href="https://github.com/TimLemke" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/timlemkecodes" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						</div>
+						<h4><i class="fa fa-map-marker" aria-hidden="true"></i>Location</h4>
+						<p>Toronto, Canada</p>
+					</div>
+				</div>
+				<a class="contactUp" href="#header">
+					<i class="fa fa-angle-up" aria-hidden="true"></i>
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div class="footerContainer">
+				<div class="footerContainer__left">
+					<p>2017 &copy; Code by Tim Lemke and design by TheGem</p>
+				</div>
+				<div class="footerContainer__center">
+					<img src="public/assets/codinglogoWhite.png" alt="Tim Lemke Coding Logo">
+				</div>
+				<div class="footerContainer__right">
+					<p>Hero image by <a href="https://unsplash.com/@fiveamstories" target="_blank">Alex Shutin</a></p>
+					<p>Skills section image by <a href="https://unsplash.com/@insolitus" target="_blank">Rowan Heuvel</a></p>
+					<p>Contact section image by <a href="https://unsplash.com/@sabrituzcu" target="_blank">Sabri Tuzcu</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--jQuery CDN-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!--Flickity.js-->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--Javascript-->
 	<script src="public/scripts/main.js"></script>
-	
 </body>
 </html>
