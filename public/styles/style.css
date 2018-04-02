@@ -174,7 +174,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .mySkillsDown {
   padding: 0px;
   position: absolute;
-  top: 85%;
+  top: 90%;
   right: 0%; }
   @media (max-width: 1200px) {
     .mySkillsDown {
@@ -185,13 +185,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       top: 90%; } }
   @media (max-width: 768px) {
     .mySkillsDown {
-      top: 82%; } }
+      top: 90%; } }
   @media (max-width: 555px) {
     .mySkillsDown {
       padding: 0px;
       margin: 0px;
       position: absolute;
-      top: 89%;
+      top: 95%;
       left: 45%; } }
   .mySkillsDown .fa {
     color: white;
@@ -661,25 +661,25 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
-  height: 756px; }
+  height: auto;
+  position: relative; }
   @media (max-width: 1200px) {
     .skillsContainer {
-      height: 900px; } }
+      height: auto; } }
   @media (max-width: 1200px) {
     .skillsContainer {
-      height: 1000px; } }
+      height: auto; } }
   @media (max-width: 768px) {
     .skillsContainer {
-      height: 1000px; } }
+      height: auto; } }
   @media (max-width: 555px) {
     .skillsContainer {
-      height: 1008px; } }
+      height: auto; } }
 
 .skills {
   text-align: center;
   padding-top: 118px;
-  padding-bottom: 28px;
-  position: relative; }
+  padding-bottom: 28px; }
   @media (max-width: 1200px) {
     .skills {
       padding-top: 70px;
@@ -754,13 +754,18 @@ nav {
   content: "";
   width: 50%;
   height: 50px;
-  right: 132px;
+  right: 158px;
   top: 30px;
   border-bottom: 5px solid rgba(255, 255, 255, 0.5); }
+  @media (max-width: 768px) {
+    .futureSkillsHeader::after {
+      right: 188px;
+      top: 110px;
+      width: 30%; } }
   @media (max-width: 555px) {
     .futureSkillsHeader::after {
       right: 85px;
-      top: 112px; } }
+      top: 180px; } }
 
 .currentSkills__container {
   display: -webkit-box;
@@ -790,7 +795,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100% / 12);
+    width: calc(100% / 8);
     font-size: 60px;
     padding: 20px;
     color: white; }
